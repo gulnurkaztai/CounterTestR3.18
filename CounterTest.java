@@ -14,7 +14,13 @@ public class CounterTest {
         counter.click();
         counter.click();
         counter.undo();
-        System.out.println("Expected value is 2");
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.setLimit();
+        System.out.println("Expected value is 5"); // Should return the limit if it was clicked more than 5 times and value > 5
         System.out.println("Value: " + counter.getValue());
      }
 }

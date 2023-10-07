@@ -34,4 +34,11 @@
     public void reset(){
         this.value=0;
     }
+
+    /**
+     * Set the limit to 5
+     */
+    public void setLimit(){
+        this.value = Math.min(this.value, 5);
+    }
  }
