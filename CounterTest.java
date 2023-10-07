@@ -13,7 +13,8 @@ public class CounterTest {
         counter.click();
         counter.click();
         counter.click();
-        System.out.println("Expected value is 3");
+        counter.undo();
+        System.out.println("Expected value is 2");
         System.out.println("Value: " + counter.getValue());
      }
 }
